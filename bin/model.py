@@ -1,20 +1,20 @@
+# -*- coding: utf-8 -*-
 ##class and functions##
-
 import sqlite3
 conn = sqlite3.connect("database.db")
 c = conn.cusor()
 
 class database:
 ## TODO: Create databaseclass
-    db_name =
-
 
 class table:
-
 ##TODO Create tableclass
 
+
+
+
 def createdb():
-    c.execute('CREATE DATABASE ' + db_name + '.db')
+    c.execute('CREATE DATABASE ' + db_name + '.db'())
     c.commit()
     createtable()
 
@@ -25,9 +25,13 @@ def createtable():
     c.commit()
     c.close()
 
-def writetotable():
-    c.execute('INSET INTO "+ tablename +" ('" + filename + "'," + dirname + " )')
+def createtableobj():
+    ##TODO
+
+def writetotable(tablename,filename, dirname,):
+    c.execute('INSET INTO ('"+ tablename +"') ('" + filename + "'," + dirname + " )'(tablename, filename, dirname))
     c.commit()
+
 
 
 
